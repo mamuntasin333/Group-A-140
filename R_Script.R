@@ -1,0 +1,5 @@
+View(melb_data)
+nrow(melb_data)
+class(melb_data$Price)
+mean(melb_data$Price)
+summary(melb_data$Price)
