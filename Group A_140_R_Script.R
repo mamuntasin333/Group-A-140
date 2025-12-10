@@ -7,7 +7,7 @@ class(melb_data$Price)
 class(melb_data$Distance)
 melb_data$Date_formatted<-melb_data$Date
 class(melb_data$Date_formatted)
-melb_data$Date_formatted <- format(melb_data$Date_formatted, "%d-%m-%Y")
+
 
 #Converting the Date column into proper Date format (required for subsetting by year/month)
 melb_data$Date_formatted <- as.Date(melb_data$Date_formatted, format="%d/%m/%Y")
@@ -43,7 +43,7 @@ hist(melb_data_subset$Price_in_million,
      main="Distribution of House Prices(Jan–Mar 2017)",
      xlab="Price (Million Dollars)",
      freq = FALSE)
-#Adding a density curve to show the smoothed shape of the price distribution
+#Adding a density curve to show the smoothed shape of the price distribution..
 lines(density(melb_data_subset$Price_in_million),
       col = "blue",
       lwd = 2)
