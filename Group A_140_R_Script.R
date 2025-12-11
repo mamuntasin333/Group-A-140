@@ -73,6 +73,7 @@ lines(density(melb_data_subset$Distance),
       lwd = 2)
 dev.off()
 
+#prepare variables for scatter  plot
 x<-melb_data_subset$Distance
 y<-melb_data_subset$Price_in_million
 png("Price_distance_correlation.png", width = 900, height = 700)
