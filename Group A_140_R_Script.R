@@ -13,7 +13,6 @@ class(melb_data$Date_formatted)
 melb_data$Date_formatted <- as.Date(melb_data$Date_formatted, format="%d/%m/%Y")
 
 class(melb_data$Date_formatted)  
-melb_data_subset<- subset(melb_data,format(Date, "%Y") == "2017" & format(Date, "%m") %in% c("01", "02", "03"))
 melb_data$Date<- as.Date(melb_data$Date, format="%d/%m/%Y")
 class(melb_data$Date)
 #Creating a subset containing only Jan–Mar 2017 data
